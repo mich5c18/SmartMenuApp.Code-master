@@ -60,5 +60,10 @@
       <Name>SmartMenuLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DanksMenu.txt" />
+    <Content Include="EnglishMenu.txt" />
+    <Content Include="Sprogvalg.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
