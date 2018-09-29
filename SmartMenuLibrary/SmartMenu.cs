@@ -11,16 +11,34 @@ namespace SmartMenuLibrary
     {
         public void LoadMenu(string path)
         {
-            int counter = 0;
             string line;
+            string Selection = Console.ReadLine();
 
-            // Read the file and display it line by line.  
-            System.IO.StreamReader file =
-                new System.IO.StreamReader(@"C:/Users/Michael/Desktop/ProjektProgrammering/SmartMenuApp.Code-master/SmartMenuApp/Sprogvalg.txt");
-            while ((line = file.ReadLine()) != null)
+            Console.WriteLine("Vælg sprog");
+            Console.WriteLine("Chose language");
+            Console.WriteLine("1 for dansk");
+            Console.WriteLine("2 for english");
+            Console.ReadLine();
+
+            if (Selection == "1")
             {
-                System.Console.WriteLine(line);
-                counter++;
+
+                // Read the file and display it line by line.  
+                System.IO.StreamReader file = new System.IO.StreamReader(@"C:/Users/Michael/Desktop/ProjektProgrammering/SmartMenuApp.Code-master/SmartMenuApp/Sprogvalg.txt");
+                while ((line = file.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
+            }
+            else if (Selection == "2")
+            {
+
+                // Read the file and display it line by line.  
+                System.IO.StreamReader file = new System.IO.StreamReader(@"C:/Users/Michael/Desktop/ProjektProgrammering/SmartMenuApp.Code-master/SmartMenuApp/Sprogvalg.txt");
+                while ((line = file.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
             }
         }
         public void Activate()
